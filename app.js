@@ -4,12 +4,12 @@ var  app= express();
 var bodyParse =require("body-parser"); 
 var mongoose = require("mongoose"); // kind of a like a wrapper for mongodb
 //mongoose connect
-mongoose.connect("mongodb://localhost/todo");
+mongoose.connect("mongodb://localhost/todo"); // put your database name here in place of 'todo'
 
 app.set("view engine","ejs");
 app.use(bodyParse.urlencoded({extended: true}));
 //mongoose schema
-var todoSchema = new mongoose.Schema({
+var todoSchema = new mongoose.Schema({ // here it will create a collection named todos
 name:String
 });
  var Todo = mongoose.model("Todo",todoSchema);
