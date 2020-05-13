@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Planner®</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrint-to-fit=no">
+	<!---Bootstrapcss-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			background-color: greenyellow;
+			color:black;
+			bor
+		}
+		h1{
+			margin-top: 10rem;
+		}
+		form{
+			margin-bottom: 2rem;
+		}
+		ul{
+			//list-style-type: none;
+			padding-top: 20px;
+		}
+		li{
+			padding-left: 20px;
+		}
+	</style>
+	</head>
+<body >
+<!---navbar-->
+<nav class="navbar navbar-dark bg-dark" style="background-color: #202020;">
+	<a href="#" class="navbar-brand">
+		<i class="fa fa-check-circle">   My Daily Planner</i>
+		
+	</a>
+</nav>
+<!---input form-->
+<div class="container">
+	<row>
+		<h1 class="text-center">What do you want to do today?</h1>
+		<br>
+		<br>
+		<form class="col-+ mx-auto" action="/newtodo" method="POST">
+
+			<div class="input-group">
+				<input class="form-control"   type="text" name="item" placeholder="Let's do it"><span><button type="submit" class="btn btn-primary">Submit</button></span>
+
+			</div>
+			</form>
+		</row>
+		<div class="row">
+			<ul class="col-6 mx-auto">
+				<% for(var i = 0;i <todoList.length ; i++){ %>
+				<li> <%= todoList[i].name %></li> 
+			<% } %>
+			</ul>
+		</div>
+</div>
+</body>
+</html>
