@@ -1,6 +1,10 @@
 
 <h1> My Daily Planner® : Plan your Way to Success </h1>
 
+<p align="center">
+
+<img src="https://github.com/ShankarNarayananS/My-Daily-Planner/blob/master/dailyplanner.PNG">
+</p>
 
 <p align="center">
 
@@ -8,10 +12,8 @@
 
 </p>
 
-<p align="center">
 
-<img src="https://github.com/ShankarNarayananS/My-Daily-Planner/blob/master/dailyplanner.PNG">
-</p>
+
 
 <h2> What is this? </h2>
 <h4> This is a daily planner app </h4>
@@ -26,6 +28,9 @@
 <h4>4. <a href="https://www.npmjs.com/package/ejs">EJS</a></h4>
 
 <h2> Sounds amazing, how should I go about it? </h2>
+
+
+
 <h4>1. Download this repository to your server</h4>
 <h4>2. Install <a href="https://nodejs.org/en/download/">Node JS</a> </h4>
 <h4>3. Install <a href="https://www.mongodb.com/download-center/community">Mongo DB</a> </h4>
